@@ -5,7 +5,7 @@
 
       <div>
         {%- if block.settings.image != blank -%}
-	        <img src="{{ block.settings.image | img_url: '2000x2000' }}" loading="lazy" alt="">
+	        {% comment %} <img src="{{ block.settings.image | img_url: '2000x2000' }}" loading="lazy" alt=""> {% endcomment %}
         {%- else -%}
 	        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
       {%- endif -%}
