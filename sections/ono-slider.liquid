@@ -5,7 +5,7 @@
 
       <div>
         {%- if block.settings.image != blank -%}
-	        {% comment %} <img src="{{ block.settings.image | img_url: '2000x2000' }}" loading="lazy" alt=""> {% endcomment %}
+	        <img src="{{ block.settings.image | img_url: '2000x2000' }}" loading="lazy" alt="">
         {%- else -%}
 	        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
       {%- endif -%}
@@ -24,7 +24,23 @@
                 "id": "slider_title",
                 "default": "タイトルが入ります。",
                 "label": "タイトル"
-              }
+              },
+              {
+                "type": "checkbox",
+                "id": "auto",
+                "label": "スライドの自動切り替え",
+                "default": false
+            },
+            {
+                "type": "range",
+                "id": "speed",
+                "label": "スライドの変更する間隔",
+                "max": 9,
+                "min": 3,
+                "step": 2,
+                "unit": "秒",
+                "default": 5
+            }
         ],
         "blocks": [
             {
