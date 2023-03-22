@@ -21,7 +21,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -37,11 +37,11 @@
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
-        "adapt_height_first_image": false,
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
+        "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
@@ -69,6 +69,8 @@
         "text"
       ],
       "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
@@ -80,17 +82,24 @@
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
         "collection": "all",
         "products_to_show": 8,
         "columns_desktop": 4,
-        "color_scheme": "background-1",
+        "full_width": false,
         "show_view_all": false,
-        "swipe_on_mobile": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
+        "enable_quick_add": false,
         "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 28,
         "padding_bottom": 36
       }
@@ -128,6 +137,7 @@
         "heading_size": "h2",
         "desktop_layout": "left",
         "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
         "color_scheme": "background-1",
         "padding_top": 36,
         "padding_bottom": 36
@@ -137,8 +147,9 @@
       "type": "video",
       "settings": {
         "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": false,
         "color_scheme": "background-1",
@@ -192,11 +203,65 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false,
         "color_scheme": "background-1",
         "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "c3ed4f08-0eac-4b2d-81fe-c17a8f4363ca": {
+      "type": "ono-slider",
+      "blocks": {
+        "df2ae145-b731-417a-b3b7-ed57d638a9da": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/matte-lipstick-with-box-mockup_439185-1537.jpg"
+          }
+        },
+        "32732563-4182-4c3b-8f47-b2a5aac1e482": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/plastic-lip-gloss-tube-mockup_439185-2442.jpg"
+          }
+        },
+        "cb02a734-9de4-4642-b86a-76b07b983b6e": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lip-liner-lipstick-kit-box-packaging-mockup_439185-4579.jpg"
+          }
+        },
+        "f8a7a1b1-cde2-4e8a-9051-b61240ea26cd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/transparent-glossy-plastic-lip-gloss-tube-mockup_439185-6125.jpg"
+          }
+        },
+        "50a6e4f8-c8c2-4954-8f10-4a545ba2fedb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/eyebrow-pencil-with-box-packaging-mockup_439185-2203.jpg"
+          }
+        },
+        "92025f51-08c0-43f2-9e4b-8b0f5a791fd2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cosmetic-lipstick-branding-mockup_439185-9166.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "df2ae145-b731-417a-b3b7-ed57d638a9da",
+        "32732563-4182-4c3b-8f47-b2a5aac1e482",
+        "cb02a734-9de4-4642-b86a-76b07b983b6e",
+        "f8a7a1b1-cde2-4e8a-9051-b61240ea26cd",
+        "50a6e4f8-c8c2-4954-8f10-4a545ba2fedb",
+        "92025f51-08c0-43f2-9e4b-8b0f5a791fd2"
+      ],
+      "settings": {
+        "slider_title": "タイトルが入ります。",
+        "auto": false,
+        "speed": 5
       }
     }
   },
@@ -206,6 +271,7 @@
     "featured_collection",
     "collage",
     "video",
-    "multicolumn"
+    "multicolumn",
+    "c3ed4f08-0eac-4b2d-81fe-c17a8f4363ca"
   ]
 }
